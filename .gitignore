@@ -9,6 +9,12 @@
 # production
 /build
 
+# vscode settings
+/.vscode
+
+# ignore css files
+/src/**/*.css
+
 # misc
 .DS_Store
 .env.local

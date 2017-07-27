@@ -1,0 +1,12 @@
+@import './stylesheets/variable.scss';
+
+#App{
+  @media screen and (min-width: $lg-lower-bound) {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+		padding: 50px calc(50% - 590px) 0px;
+
+		position: relative;
+	}
+}

@@ -1,0 +1,63 @@
+@import '../../stylesheets/variable.scss';
+
+#CV-Block{
+	width: 80%;
+
+	margin: 0 auto;
+
+	// for lg
+	@media screen and (min-width: $lglb){ 
+		width: 810px;
+
+		display: inline-block;
+		float: right;
+	
+		background-color: rgba(#ddd, 0.95);
+
+		background-image: url("http://www.transparenttextures.com/patterns/always-grey.png");
+		background-size: 20px 20px;
+
+		opacity: 1;
+  }
+  
+  .info-list {
+    .info-item {
+      ul {
+        margin: 10px 0;
+        font-size: 16px;
+        list-style-type: none;
+      }
+    }
+  }
+
+  .worklinktext{
+		width: 70%;
+		float: right;
+		margin: 5px 20px 30px;
+		border-top: 2px dashed #999;
+
+		text-align: right;
+		font-size: 80%;
+
+		color: #777;
+
+		// for sm
+		@media screen and (max-width: $smub) {
+			width: 90%;
+			padding: 5px 10px 0 0;
+		}
+
+		// for md
+		@media screen and (min-width: $mdlb) and (max-width: $mdub){
+			width: 70%;
+			padding: 5px 10px 0 50px;
+		}
+
+		// for lg
+		// for md
+		@media screen and (min-width: $lglb){
+			width: 90%;
+			padding: 5px 10px 0 50px;
+		}
+	}  
+}

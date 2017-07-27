@@ -1,21 +1,19 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+
+import './App.css'
+
+import SelfIntro from './components/SelfIntro/SelfIntro'
+import CVBlock from './components/CVBlock/CVBlock'
 
 class App extends Component {
-  render() {
+  render () {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div id='App'>
+        <SelfIntro />
+        <CVBlock />
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App

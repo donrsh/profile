@@ -10,7 +10,6 @@ class InfoBlock extends Component {
       const io = new IntersectionObserver(
         entries => {
           entries.map(entry => {
-            console.log(entry.target)
             entry.target.classList.remove(this.beforeEnterClassName)
           })
         }

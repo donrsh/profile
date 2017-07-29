@@ -47,6 +47,68 @@ class CVBlock extends Component {
     return (
       <div id='CV-Block'>
         <InfoBlock
+          title={workExperience.title}
+          id={workExperience.id}
+        >
+          <ul className='info-list'>
+            <li className='info-item'>
+              Maintain an AngularJS project.
+            </li>
+            <li className='info-item'>
+              React integration with Ruby on Rails (with this gem:
+              <FAWLink
+                text='react_on_rails'
+                fawIconName='github'
+                target='_blank'
+                linkUrl='            https://github.com/shakacode/react_on_rails'
+              />
+              ).
+            </li>
+            <li className='info-item'>
+              Code splitting based on routes with webpack 2.
+            </li>
+            <li>
+              Integrate with <img
+                src={require('../../images/stripe-logo.svg')}
+                alt='stripe logo'
+                style={{
+                  height: 30,
+                  verticalAlign: 'middle'
+                }}
+              /> to customized checkout flow.
+            </li>
+          </ul>
+        </InfoBlock>
+
+        <InfoBlock
+          title={myWorks.title}
+          id={myWorks.id}
+        >
+          <ul className='info-list'>
+            <li>
+              {works.RWDExercise.name}
+              {' - '}
+              {works.RWDExercise.desc}
+              {works.RWDExercise.append}
+            </li>
+
+            <li>
+              {works.MMPCalculator.name}
+              {' - '}
+              {works.MMPCalculator.desc}
+              {works.MMPCalculator.append}
+            </li>
+
+            <li>
+              {works.RainDropAnimation.name}
+              {' - '}
+              {works.RainDropAnimation.desc}
+              {works.RainDropAnimation.append}
+            </li>
+          </ul>
+        </InfoBlock>
+
+        <InfoBlock
           title={cssRelatedSkills.title}
           id={cssRelatedSkills.id}
         >
@@ -291,57 +353,6 @@ class CVBlock extends Component {
           </ul>
         </InfoBlock>
 
-        <InfoBlock
-          title={workExperience.title}
-          id={workExperience.id}
-        >
-          <ul className='info-list'>
-            <li className='info-item'>
-              Maintain an AngularJS project.
-            </li>
-            <li className='info-item'>
-              React integration with Ruby on Rails (with this gem:
-              <FAWLink
-                text='react_on_rails'
-                fawIconName='github'
-                target='_blank'
-                linkUrl='            https://github.com/shakacode/react_on_rails'
-              />
-              ).
-            </li>
-            <li className='info-item'>
-              Code splitting based on routes with webpack 2.
-            </li>
-          </ul>
-        </InfoBlock>
-
-        <InfoBlock
-          title={myWorks.title}
-          id={myWorks.id}
-        >
-          <ul className='info-list'>
-            <li>
-              {works.RWDExercise.name}
-              {' - '}
-              {works.RWDExercise.desc}
-              {works.RWDExercise.append}
-            </li>
-
-            <li>
-              {works.MMPCalculator.name}
-              {' - '}
-              {works.MMPCalculator.desc}
-              {works.MMPCalculator.append}
-            </li>
-
-            <li>
-              {works.RainDropAnimation.name}
-              {' - '}
-              {works.RainDropAnimation.desc}
-              {works.RainDropAnimation.append}
-            </li>
-          </ul>
-        </InfoBlock>
       </div>
     )
   }

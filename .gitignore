@@ -15,6 +15,10 @@
 # ignore css files
 /src/**/*.css
 
+# ignore testflow.js,
+# which is used to test flow syntax
+/src/testflow.js
+
 # misc
 .DS_Store
 .env.local

@@ -10,17 +10,23 @@ import works from '../../data/works'
 const infoBlockData = {
   cssRelatedSkills: {
     title: 'CSS-related skills',
-    id: 'css-related-skills'
+    id: 'css-related-skills',
+    toggleable: true,
+    openByDefault: false
   },
 
   jsRelatedSkills: {
     title: 'JavaScript-related skills',
-    id: 'js-related-skills'
+    id: 'js-related-skills',
+    toggleable: true,
+    openByDefault: false
   },
 
   workSurroundingsAndTools: {
     title: 'Work Surroundings and Tools',
-    id: 'work-surroudings-and-tools'
+    id: 'work-surroudings-and-tools',
+    toggleable: true,
+    openByDefault: false
   },
 
   workExperience: {
@@ -111,6 +117,8 @@ class CVBlock extends Component {
         <InfoBlock
           title={cssRelatedSkills.title}
           id={cssRelatedSkills.id}
+          toggleable={cssRelatedSkills.toggleable}
+          openByDefault={cssRelatedSkills.openByDefault}
         >
           <ul className='info-list'>
             <li className='info-item'>
@@ -143,6 +151,8 @@ class CVBlock extends Component {
         <InfoBlock
           title={jsRelatedSkills.title}
           id={jsRelatedSkills.id}
+          toggleable={jsRelatedSkills.toggleable}
+          openByDefault={jsRelatedSkills.openByDefault}
         >
           <ul className='info-list'>
             <li className='info-item'>
@@ -216,11 +226,23 @@ class CVBlock extends Component {
         <InfoBlock
           title={workSurroundingsAndTools.title}
           id={workSurroundingsAndTools.id}
+          toggleable={workSurroundingsAndTools.toggleable}
+          openByDefault={workSurroundingsAndTools.openByDefault}
         >
           <ul className='info-list'>
             <li className='info-item'>
               <div>I use 🍎 Mac OS X for development.</div>
             </li>
+
+            <li className='info-item'>
+              <FAWLink
+                text='Git'
+                fawIconName='git-square'
+                target='_blank'
+                linkUrl='https://git-scm.com/'
+              />, in command line.
+            </li>
+
             <li className='info-item'>
               <div>I use Visual Studio Code as my editor. Here are some packages I think convenient and use to integrate with my workflow: </div>
               <ul>
@@ -342,14 +364,6 @@ class CVBlock extends Component {
               /> for fake backend.
             </li>
 
-            <li className='info-item'>
-              <FAWLink
-                text='Git'
-                fawIconName='git-square'
-                target='_blank'
-                linkUrl='https://git-scm.com/'
-              />, in command line.
-            </li>
           </ul>
         </InfoBlock>
 

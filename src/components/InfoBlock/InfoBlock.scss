@@ -161,12 +161,8 @@
     }
 }
 
-
-
-
-
 .content{
-	display: block;
+  position: relative;
 
 	padding: 25px 0 0 0;
 	margin: 10px 0 0 0;
@@ -176,11 +172,29 @@
 	overflow: hidden;
 	border-top: 5px ridge #999 ;
 	
-	// postcss rucksack
-	font-size: responsive 14px 18px;
-	font-range: 320px 780px;
+  line-height: 1.4;
+  
+  &[data-show='true'] {
+    display: block;
+    
+    animation: fade-in 1s;
+  }
 
-	line-height: 1.4;
+  &[data-show='false'] {
+    display: none;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      top: 10px;
+    }
+
+    to {
+      opacity: 1;
+      top: 0;
+    }
+  }
 
 	// for lg
 	@media screen and (min-width: $lg-lower-bound){

@@ -14,8 +14,9 @@ const SelfIntro = () => {
           alt='My signature'
         />
         <div id='text'>
-          Hi! I'm a frontend developer. You can find me via
-          <br />
+          Hi! I'm a frontend developer.
+          <br /><br />
+          You can reach me via<br />
           <a
             href='mailto:don.shieh@gmail.com'
             className='email-link'
@@ -26,6 +27,16 @@ const SelfIntro = () => {
             />
             don.shieh@gmail.com
           </a>
+          <br />
+          <br />
+          Download{' '}
+          <a
+            href='/profile/Don-Hsieh-resume.pdf'
+            target='_blank'
+            className='email-link'
+          >
+            My Resume
+          </a> in pdf.
         </div>
       </div>
     </div>

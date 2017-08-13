@@ -32,7 +32,7 @@
 
 	// for lg
 	@media screen and (min-width: $lg-lower-bound){
-		width: 300px;
+		width: 320px;
 		display: inline-block;
 
 		position: fixed;
@@ -79,6 +79,8 @@
     @media screen and (min-width: $lg-lower-bound){
       width: 90%;
       height: auto;
+      position: relative;
+      left: -34px;
     }
   }
 
@@ -94,6 +96,7 @@
 
     // for lg
     @media screen and (min-width: $lg-lower-bound){
+      text-align: left;
       font-size: 18px;
     }
 
